@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Run</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron-container">
+            <h1 class="has-text-black is-size-2-desktop is-size-2-tablet is-size-4-mobile"> Pace Your Workout With Tempo Run!</h1>
+        </div>
+    </header>
+
+    <section class="hero"></section>
+
+    <nav class=" columns navbar is-size-3-desktop is-size-3-tablet is-size-5-mobile">
+        <p>
+            <a class="link is-info" href="./index.html">Home</a>
+        </p>
+
+        <p>
+            <a class="link is-info" href="./about.html">About</a>
+        </p>
+
+    </nav>
+
+    <main class="columns">
+        <div class="card-header column is-one-third">
+            <div id="search-form-section">
+                <div class="field">
+                    <label class="label" for="search">Search</label>
+                    <div class="control">
+                        <input class="input" type="text" id="search" name="search"
+                            placeholder="BPM or Pace" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="search-by" id="by-bpm" />
+                            Search by BPM
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="search-by" id="by-pace" />
+                            Search by Pace
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="genre">Narrow Results by Genre</label>
+                    <div class="control">
+                        <select name="genre" id="genre">
+                            <option value="">Choose a Genre</option>
+                            <option value="Alternative">Alternative</option>
+                            <option value="Blues">Blues</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Country">Country</option>
+                            <option value="Dance">Dance/Electronic</option>
+                            <option value="Folk">Folk</option>
+                            <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Latin">Latin</option>
+                            <option value="Metal">Metal</option>
+                            <option value="New Age">New Age</option>
+                            <option value="Other/Undefined">Other/Undefined</option>
+                            <option value="Pop">Pop</option>
+                            <option value="R&B">R&B</option>
+                            <option value="Reggae">Reggae</option>
+                            <option value="Religious">Religious</option>
+                            <option value="Rock">Rock</option>
+                            <option value="World">World</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="button" type="submit" id="search-button">Search</button>
+            </div>
+
+        </div>
+
+        <div class="columns">
+            <div class="column is-full">
+            
+            <div id="results-section">
+                <ul id="results-list">
+                    asdfasdasdasdasd
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>
