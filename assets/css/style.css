@@ -2,8 +2,6 @@
     --primary: rgb(99, 199, 249);
     --secondary: rgb(46, 45, 45);
     --tertiary: rgb(255, 255, 255);
-    --light-grey: rgb(117, 114, 114);
-    --black: rgb(0, 0, 0);
 }
 
 .hero {
@@ -16,13 +14,10 @@
 
 header {
     background-color: var(--primary);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: x-large;
 }
 
 .navbar {
-    background-color: var(--light-grey);
+    background-color: var(--primary);
     color: var(--tertiary);
     text-align: center;
     font-size: xx-large;
@@ -30,12 +25,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+    
 }
 
-.level {
-    background-color: var(--light-grey);
-    height: 50px;
-}
 
 a {
     color: var(--tertiary);
@@ -61,12 +53,9 @@ a {
     color: var(--tertiary);
 }
 
-#by-location {
-    margin-left: -.6em;
-}
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     
 }
 
