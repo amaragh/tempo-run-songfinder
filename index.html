@@ -12,41 +12,28 @@
 
 <body>
     <header>
-    <nav class=" columns navbar is-full">
-        <p>
-            <a class="link is-info" href="./index.html">Home</a>
-        </p>
-        Pace your workout with Tempo Run!
-        <p>
-            <a class="link is-info" href="./about.html">About</a>
-        </p>
-
+        <h1>
+           <a href="index.html">Tempo Run</a> 
+        </h1>
+    <nav> 
+        <ul>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+        </ul>
     </nav>
-    </header>
-    <section class="hero"></section>
-
-    <main class="columns">
-        <div class="card-header column is-one-third">
+</header> 
+    <section class="hero is-mobile">
+        <div class="bpm-search">
             <div id="search-form-section">
                 <div class="field">
                     <label class="label" for="search">Search</label>
                     <div class="control">
                         <input class="input" type="text" id="search" name="search"
-                            placeholder="BPM or Pace" />
+                            placeholder="BPM" />
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
-                        <label class="radio">
-                            <input type="radio" name="search-by" id="by-bpm" />
-                            Search by BPM
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="search-by" id="by-pace" />
-                            Search by Pace
-                        </label>
-                    </div>
-                </div>
+                
                 <div class="field">
                     <label class="label" for="genre">Narrow Results by Genre</label>
                     <div class="control">
@@ -77,7 +64,9 @@
             </div>
 
         </div>
+    </section>
 
+    <main class="columns is-mobile">
         <div class="columns">
             <div class="column is-full">
             <div id="results-section">
@@ -96,7 +85,7 @@
                 </ul>
             
             </div>   
-        </div>
+        </div>    
     </main>
 <footer></footer>
 <script src="./assets/js/script.js"></script>
