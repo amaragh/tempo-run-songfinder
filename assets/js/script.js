@@ -4,6 +4,13 @@
 //  allowed range is 40-220 BPM
 var songListEl = document.querySelector("#results-list")
 
+var searchFormEl = document.querySelector("#search-form-section");
+var bpmInputEl = document.querySelector("#search");
+
+
+
+
+
 var getSongsByBpm = function (bpm) {
 
     var apiURL = "https://api.getsongbpm.com/tempo/?api_key=c760a53e4f71cf130710e3cefa00e4d2&bpm=" + bpm + "&limit=10";
@@ -21,6 +28,7 @@ var getSongsByBpm = function (bpm) {
 };
 
 
+
 // function to parse BPM API response and diplay on page
 var displaySong = function (data) {
 
@@ -30,7 +38,7 @@ var displaySong = function (data) {
     for (var i = 0; i < songArray.length; i++) {
         var songTitle = songArray[i].song_title;
         var artist = songArray[i].artist.name;
-       
+
         var genresEl = document.createElement("div");
 
         var genresArray = songArray[i].artist.genres;
@@ -69,4 +77,17 @@ var displaySong = function (data) {
 
 }
 
-getSongsByBpm(150);
+var searchSubmitHandler = function (event) {
+    event.preventDefault();
+
+    // get BPM from input value
+    var bpm = bpmInputEl.value.trim();
+
+    getSongsByBpm(bpm);
+
+    // console.log(bpm);
+
+}
+
+searchFormEl.addEventListener("submit", searchSubmitHandler);
+
