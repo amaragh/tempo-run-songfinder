@@ -30,20 +30,21 @@
     <!-- Hero START -->
     <section class="hero is-mobile">
         <!-- Hero-Form START -->
-        <div class="bpm-search">
-            <form id="search-form-section">
+        <div class="bpm-search bulma-overlay-mixin is-mobile">
+            <form id="search-form-section is-mobile">
                 <!-- Numeric Input and Label -->
                 <div class="field">
-                    <label class="label" for="search">Search</label>
+                    <label class="label is-normal" for="search">Search</label>
                     <div class="control">
-                        <input class="input" type="number" id="search" name="search" placeholder="BPM" min="40"
+                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search" name="search" placeholder="BPM" min="40"
                             max="220" />
                     </div>
                 </div>
                 <!-- Drop Down Menu -->
                 <div class="field">
-                    <label class="label" for="genre">Narrow Results by Genre</label>
+                    <label class="label" id="dropdown" for="genre">Narrow Results by Genre</label>
                     <div class="control">
+                        <!-- TODO: add bulma styles to drop down menu -->
                         <select name="genre" id="genre">
                             <option value="">Choose a Genre</option>
                             <option value="Alternative">Alternative</option>
@@ -67,8 +68,8 @@
                         </select>
                     </div>
                 </div>
-                <!-- Search Button -->
-                <button class="button" type="submit" id="search-button">Search</button>
+                <!-- Search Button <DELETE>(old version had class of searchBTN now has ID of search-button)<DELETE> -->
+                <button class="button is-normal is-black" type="submit" id="search-button">Search</button>
             </form>
 
         </div>
