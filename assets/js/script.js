@@ -8,9 +8,6 @@ var searchFormEl = document.querySelector("#search-form-section");
 var bpmInputEl = document.querySelector("#search");
 
 
-
-
-
 var getSongsByBpm = function (bpm) {
 
     var apiURL = "https://api.getsongbpm.com/tempo/?api_key=c760a53e4f71cf130710e3cefa00e4d2&bpm=" + bpm + "&limit=10";
@@ -33,7 +30,6 @@ var getSongsByBpm = function (bpm) {
 var displaySong = function (data) {
 
     var songArray = data.tempo;
-    console.log("DATA", data.tempo);
 
     for (var i = 0; i < songArray.length; i++) {
         var songTitle = songArray[i].song_title;
@@ -69,11 +65,7 @@ var displaySong = function (data) {
         songEl.appendChild(genresEl);
 
         songListEl.appendChild(songEl);
-
-        console.log(songListEl);
     }
-
-
 
 }
 
@@ -84,8 +76,6 @@ var searchSubmitHandler = function (event) {
     var bpm = bpmInputEl.value.trim();
 
     getSongsByBpm(bpm);
-
-    // console.log(bpm);
 
 }
 
