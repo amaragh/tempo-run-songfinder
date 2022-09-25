@@ -33,7 +33,6 @@ var getSongsByBpm = function (bpm) {
 var displaySong = function (data) {
 
     var songArray = data.tempo;
-    console.log("DATA", data.tempo);
 
     for (var i = 0; i < songArray.length; i++) {
         var songTitle = songArray[i].song_title;
