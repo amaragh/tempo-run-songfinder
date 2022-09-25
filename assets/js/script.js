@@ -36,14 +36,15 @@ var displaySong = function (data) {
         var artist = songArray[i].artist.name;
 
         var genresEl = document.createElement("div");
-
+        genresEl.classList = "column is-half genres";
+        
         var genresArray = songArray[i].artist.genres;
 
         if (genresArray != null) {
             for (var x = 0; x < genresArray.length; x++) {
                 var genre = genresArray[x];
-                console.log("GENRE", genre);
                 var genreEl = document.createElement("p");
+                genreEl.classList = "genre";
                 genreEl.textContent = genre;
 
                 genresEl.appendChild(genreEl);
@@ -51,18 +52,34 @@ var displaySong = function (data) {
         }
 
         var songEl = document.createElement("li");
+        songEl.classList = "columns is-rounded song";
+
+        var songInfoEl = document.createElement("div");
+        songInfoEl.classList = "column song-info";
 
         var songTitleEl = document.createElement("h3");
         songTitleEl.textContent = songTitle;
-        songTitleEl.classList = "song-title"
+        songTitleEl.classList = "song-title";
+
+        var songAddtlInfoEl = document.createElement("div");
+        songAddtlInfoEl.classList = "column column is-full song-addtl-info";
 
         var artistEl = document.createElement("div");
+        artistEl.classList = "column is-half artist"
         artistEl.textContent = artist;
         artistEl.classList = "artist";
 
-        songEl.appendChild(songTitleEl);
-        songEl.appendChild(artistEl);
-        songEl.appendChild(genresEl);
+        var addSongBtnEl = document.createElement("div");
+        addSongBtnEl.classList = "column is-1 add-to-playlist"
+        addSongBtnEl.innerHTML = "<button type='button'><i class='fa fa-plus'></i></button>"
+
+        songAddtlInfoEl.appendChild(artistEl);
+        songAddtlInfoEl.appendChild(genresEl);
+        
+        songInfoEl.appendChild(songTitleEl);
+        songInfoEl.appendChild(songAddtlInfoEl);
+        songEl.appendChild(songInfoEl);
+        songEl.appendChild(addSongBtnEl);
 
         songListEl.appendChild(songEl);
     }
@@ -76,6 +93,8 @@ var searchSubmitHandler = function (event) {
     var bpm = bpmInputEl.value.trim();
 
     getSongsByBpm(bpm);
+
+    bpmInputEl.value = "";
 
 }
 
