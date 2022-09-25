@@ -1,79 +1,79 @@
 :root {
-    --primary: rgb(99, 199, 249);
-    --secondary: rgb(46, 45, 45);
-    --tertiary: rgb(255, 255, 255);
+  --primary: rgb(99, 199, 249);
+  --secondary: rgb(46, 45, 45);
+  --tertiary: rgb(255, 255, 255);
 }
 
+/* We might need to change the background image if this image isn't free to use and share or in the public domain */
 .hero {
-    background-image: url("../images/running-girl.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 400px;
-  }
+  background-image: url("../images/running-girl.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 400px;
+}
 
+/* I don't think we need the same background image in the header (FD). The same image causes image alignment issues for the hero and header/nav. We could use a different image or background color. */
 header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-    background-image: url("../images/running-girl.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-  }
+  padding: 20px 35px;
+  background-color: #39a6b2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/running-girl.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
+}
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color:rgb(99, 199, 249);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-    
-  }
-  
-  header a {
-    text-decoration: none;
-    color:rgb(99, 199, 249);
-  }
-  
-  header nav {
-    
-    margin: 7px 0;
-  }
-  
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-  
-  header nav ul li a {
-    font-weight: bold;
-    font-size: 36px;
-    color:rgb(99, 199, 249);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
-  
- 
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
-a {
-    color: var(--tertiary);
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(99, 199, 249);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-weight: bold;
+  font-size: 36px;
+  color: rgb(99, 199, 249);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 
+
+a {
+  color: var(--tertiary);
+}
+
+/* Needs bulma css styles */
 #search-form-section {
   background-color: var(--primary);
   padding: 20px;
@@ -83,44 +83,45 @@ a {
   border-color: #024e76;
   width: 100%;
   margin: 3.5%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-    
+
 }
 
 .label {
-    color: var(--tertiary);
+  color: var(--tertiary);
 }
 
 .radio {
-    color: var(--tertiary);
+  color: var(--tertiary);
 }
 
 
 body {
-    background-color: var(--primary);
-    
+  background-color: var(--primary);
+
 }
 
 .block {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    background-color: var(--primary);
-    padding-left: 10px;
-    font-weight: bold;
-    font-size: x-large;
-  }
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--primary);
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
 
 .btn {
-    font-size: medium;
-    text-decoration: var(--tertiary);
-    width: 100%;
-    display: block;
-    margin: auto;
+  font-size: medium;
+  text-decoration: var(--tertiary);
+  width: 100%;
+  display: block;
+  margin: auto;
 }
+
 .column {
-    background-color: var(--primary);
-    margin: 50px auto;
+  background-color: var(--primary);
+  margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
   display: flex;

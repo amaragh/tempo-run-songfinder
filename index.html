@@ -11,29 +11,36 @@
 </head>
 
 <body>
+    <!-- Header and Nav Bar START -->
     <header>
         <h1>
-           <a href="index.html">Tempo Run</a> 
+            <a href="index.html">Tempo Run</a>
         </h1>
-    <nav> 
-        <ul>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-</header> 
+        <!-- (Should we add more features to the Nav) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header and Nav Bar END -->
+
+    <!-- Hero START -->
     <section class="hero is-mobile">
+        <!-- Hero-Form START -->
         <div class="bpm-search">
             <form id="search-form-section">
+                <!-- Numeric Input and Label -->
                 <div class="field">
                     <label class="label" for="search">Search</label>
                     <div class="control">
-                        <input class="input" type="text" id="search" name="search"
-                            placeholder="BPM" />
+                        <input class="input" type="number" id="search" name="search" placeholder="BPM" min="40"
+                            max="220" />
                     </div>
                 </div>
-                
+                <!-- Drop Down Menu -->
                 <div class="field">
                     <label class="label" for="genre">Narrow Results by Genre</label>
                     <div class="control">
@@ -60,6 +67,7 @@
                         </select>
                     </div>
                 </div>
+                <!-- Search Button -->
                 <button class="button" type="submit" id="search-button">Search</button>
             </form>
 
@@ -67,27 +75,31 @@
     </section>
 
     <main class="columns is-mobile">
+        <!-- (Main has two columns.. Do we still need two columns?) -->
+        <!-- (Column 1 - used to be where the old search form was. Now it is where song search populates) -->
         <div class="columns">
             <div class="column is-full">
-            <div id="results-section">
-                <ul id="results-list">
+                <div id="results-section">
+                    <ul id="results-list">
 
-                </ul>
+                    </ul>
 
+                </div>
             </div>
-        </div>
+            <!-- (Column 2 was supposed to be where the songs populate. Now its the playlist section.) -->
+            <!-- (Can we just have one column instead of two? Is the playlist going to be on a separate page?) -->
+            <div class="column">
+                <div class="column is-full">
+                    <div id="playlist-section">
+                        <ul id="playlist">
+                            ffffffffffffffffffffffffffffffffffff
+                        </ul>
 
-        <div class="column">
-            <div class="column is-full">
-            <div id="playlist-section">
-                <ul id="playlist">
-                    ffffffffffffffffffffffffffffffffffff
-                </ul>
-            
-            </div>   
-        </div>    
+                    </div>
+                </div>
     </main>
-<footer></footer>
-<script src="./assets/js/script.js"></script>
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
