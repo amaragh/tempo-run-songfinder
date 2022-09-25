@@ -141,6 +141,7 @@ body {
   justify-content: space-between;
 }
 
+/* Drop down menu styles */
 select {
   border: 1px solid black;
   font-size: x-large;
