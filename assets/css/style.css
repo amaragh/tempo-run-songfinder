@@ -86,16 +86,7 @@ a {
 
 }
 
-/* Needs bulma css styles */
-#search-form-section {
-  /* background-color: var(--primary); */
-  /* padding: 20px; */
-  /* color: #024e76; */
-  /* border-style: solid; */
-  /* border-width: 3px; */
-  /* border-color: #024e76; */
-  /* width: 100%; */
-}
+
 
 .bpm-search {
   width: 18%;
@@ -148,4 +139,17 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Drop down menu styles */
+select {
+  border: 1px solid black;
+  font-size: x-large;
+  font-weight: lighter;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
