@@ -29,6 +29,7 @@ var getSongsByBpm = function (bpm) {
 // function to parse BPM API response and diplay on page
 var displaySong = function (data) {
 
+    songListEl.innerHTML = "";
     var songArray = data.tempo;
 
     for (var i = 0; i < songArray.length; i++) {
@@ -53,7 +54,8 @@ var displaySong = function (data) {
 
         var songEl = document.createElement("li");
         // songEl.classList = "columns is-rounded song";
-        songEl.classList = "columns is-mobile is-rounded song";
+        // songEl.classList = "columns is-mobile is-rounded song";
+        songEl.classList = "columns column is-full-mobile is-5 is-rounded song";
 
         var songInfoEl = document.createElement("div");
         songInfoEl.classList = "column is-11 song-info";

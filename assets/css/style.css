@@ -152,6 +152,11 @@ body {
     justify-content: space-between;
 }
 
+
+main {
+    height: 100vh;
+}
+
 .song {
     border: solid 1px darkgrey;
     border-radius: 7px;
