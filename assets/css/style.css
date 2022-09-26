@@ -85,6 +85,13 @@ a {
 
 }
 
+
+
+.about h2 {
+    font-size: x-large;
+}
+
+
 /* Needs bulma css styles */
 #search-form-section {
   /* background-color: var(--primary); */
@@ -225,6 +232,7 @@ main {
   font-size: 24px;
 }
 
+
 /* END Dynamic HTML STYLES for Song List */
 
 /* START FOOTER STYLES */
@@ -235,3 +243,24 @@ footer {
   color: var(--tertiary);
   text-align: center;
 }
+
+/* Drop down menu styles */
+select {
+    border: 1px solid black;
+    font-size: x-large;
+    font-weight: lighter;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer {
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+  }
+
