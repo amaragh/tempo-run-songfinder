@@ -82,6 +82,9 @@ a {
 
 }
 
+.about h2 {
+    font-size: x-large;
+}
 
 /* Needs bulma css styles */
 #search-form-section {
@@ -235,3 +238,10 @@ select {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+footer {
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+  }
