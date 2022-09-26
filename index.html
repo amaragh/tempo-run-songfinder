@@ -34,42 +34,35 @@
         <div class="bpm-search bulma-overlay-mixin is-mobile">
             <form id="search-form-section" class="is-mobile">
                 <!-- Numeric Input and Label -->
-                <div class="field">
-                    <label class="label is-normal" for="search">Search</label>
-                    <div class="control">
-                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search"
-                            name="search" placeholder="BPM" min="40" max="220" />
-                    </div>
-                </div>
+                <label class="label is-normal" for="search">Search</label>
+                <input class="input bpm is-rounded is-focused is-large" type="number" id="search"
+                    name="search" placeholder="BPM" min="40" max="220" />
                 <!-- Genre Filter -->
-                <div class="field">
-                    <label class="label" id="dropdown" for="genre">Narrow Results by Genre</label>
-                    <div class="control">
-                        <!-- Genre dropdown -->
-                        <select class="dropdown-content" name="genre" id="genre">
-                            <option class="" value="">Choose a Genre</option>
-                            <option value="Alternative">Alternative</option>
-                            <option value="Blues">Blues</option>
-                            <option value="Classical">Classical</option>
-                            <option value="Country">Country</option>
-                            <option value="Dance">Dance/Electronic</option>
-                            <option value="Folk">Folk</option>
-                            <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
-                            <option value="Jazz">Jazz</option>
-                            <option value="Latin">Latin</option>
-                            <option value="Metal">Metal</option>
-                            <option value="New Age">New Age</option>
-                            <option value="Other/Undefined">Other/Undefined</option>
-                            <option value="Pop">Pop</option>
-                            <option value="R&B">R&B</option>
-                            <option value="Reggae">Reggae</option>
-                            <option value="Religious">Religious</option>
-                            <option value="Rock">Rock</option>
-                            <option value="World">World</option>
-                        </select>
-                    </div>
-                </div>
+                <label class="label" id="dropdown-lbl" for="genre">Narrow Results by Genre</label>
+                <!-- Genre dropdown -->
+                <select class="dropdown-content" name="genre" id="genre">
+                    <option class="" value="">Choose a Genre</option>
+                    <option value="Alternative">Alternative</option>
+                    <option value="Blues">Blues</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Country">Country</option>
+                    <option value="Dance">Dance/Electronic</option>
+                    <option value="Folk">Folk</option>
+                    <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Metal">Metal</option>
+                    <option value="New Age">New Age</option>
+                    <option value="Other/Undefined">Other/Undefined</option>
+                    <option value="Pop">Pop</option>
+                    <option value="R&B">R&B</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Religious">Religious</option>
+                    <option value="Rock">Rock</option>
+                    <option value="World">World</option>
+                </select>
                 <!-- Search Button -->
+                <br></br>
                 <button class="button is-normal is-black" type="submit" id="search-button">Search</button>
             </form>
 
@@ -109,7 +102,9 @@
 
     </main>
     <footer>
+
         <p class="has-text-white"> © 2022 The Tempo Run Team: Alecia Maragh, Fidel Deaquino, Patrick Duffy and Camden Barnard</p>
+
         <br>
     </footer>
     <script src="./assets/js/script.js"></script>
