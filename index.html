@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempo Run</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -36,8 +37,8 @@
                 <div class="field">
                     <label class="label is-normal" for="search">Search</label>
                     <div class="control">
-                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search" name="search" placeholder="BPM" min="40"
-                            max="220" />
+                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search"
+                            name="search" placeholder="BPM" min="40" max="220" />
                     </div>
                 </div>
                 <!-- Genre Filter -->
@@ -75,19 +76,31 @@
         </div>
     </section>
 
-    <main class="columns is-mobile">
-        <!-- (Main has two columns.. Do we still need two columns?) -->
-        <!-- (Column 1 - used to be where the old search form was. Now it is where song search populates) -->
-        <div class="columns">
-            <div class="column is-full">
-                <div id="results-section">
-                    <ul id="results-list">
+    <main>
+    
 
-                    </ul>
-
+        <ul id="results-list">
+            <!-- leaving this "li" element here for further testing -->
+            <!-- <li class="columns is-rounded song">
+                <div class="column song-info">
+                    <h3 class="column is-full song-title">Exhausted</h3>
+                    <div class="columns column is-full song-addtl-info">
+                        <div class="column is-half artist">Foo Fighters</div>
+                        <div class="column is-half genres">
+                            <p class="genre">pop</p>
+                            <p class="genre">punk</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+                <div class="column is-1 add-to-playlist">
+                    <button type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </li> -->
+           
+        </ul>
     </main>
     <footer></footer>
     <script src="./assets/js/script.js"></script>
