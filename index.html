@@ -7,38 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tempo Run</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- Header and Nav Bar START -->
     <header>
         <h1>
-           <a href="index.html">Tempo Run</a> 
+            <a href="index.html">Tempo Run</a>
         </h1>
-    <nav> 
-        <ul>
-            <li>
-                <a href="./about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-</header> 
+        <!-- (Should we add more features to the Nav) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header and Nav Bar END -->
+
+    <!-- Hero START -->
     <section class="hero is-mobile">
-        <div class="bpm-search">
-            <div id="search-form-section">
+        <!-- Hero-Form START -->
+        <div class="bpm-search bulma-overlay-mixin is-mobile">
+            <form id="search-form-section" class="is-mobile">
+                <!-- Numeric Input and Label -->
                 <div class="field">
-                    <label class="label" for="search">Search</label>
+                    <label class="label is-normal" for="search">Search</label>
                     <div class="control">
-                        <input class="input" type="text" id="search" name="search"
-                            placeholder="BPM" />
+                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search"
+                            name="search" placeholder="BPM" min="40" max="220" />
                     </div>
                 </div>
-                
+                <!-- Genre Filter -->
                 <div class="field">
-                    <label class="label" for="genre">Narrow Results by Genre</label>
+                    <label class="label" id="dropdown" for="genre">Narrow Results by Genre</label>
                     <div class="control">
-                        <select name="genre" id="genre">
-                            <option value="">Choose a Genre</option>
+                        <!-- Genre dropdown -->
+                        <select class="dropdown-content" name="genre" id="genre">
+                            <option class="" value="">Choose a Genre</option>
                             <option value="Alternative">Alternative</option>
                             <option value="Blues">Blues</option>
                             <option value="Classical">Classical</option>
@@ -60,8 +69,9 @@
                         </select>
                     </div>
                 </div>
-                <button class="button" type="submit" id="search-button">Search</button>
-            </div>
+                <!-- Search Button -->
+                <button class="button is-normal is-black" type="submit" id="search-button">Search</button>
+            </form>
 
         </div>
     </section>
@@ -74,9 +84,22 @@
                 <ul id="results-list">
                     ffffddddddddddddd
                 </ul>
+    <main>
+    
 
-            </div>
-        </div>
+        <ul id="results-list">
+            <!-- leaving this "li" element here for further testing -->
+            <!-- <li class="columns is-rounded song">
+                <div class="column song-info">
+                    <h3 class="column is-full song-title">Exhausted</h3>
+                    <div class="columns column is-full song-addtl-info">
+                        <div class="column is-half artist">Foo Fighters</div>
+                        <div class="column is-half genres">
+                            <p class="genre">pop</p>
+                            <p class="genre">punk</p>
+                        </div>
+                    </div>
+                </div>
 
         <div class="columns">
             <div class="column is-full">
@@ -87,7 +110,17 @@
             
             </div>   
         </div>    
+                <div class="column is-1 add-to-playlist">
+                    <button type="button">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+            </li> -->
+           
+        </ul>
     </main>
-<footer></footer>
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
