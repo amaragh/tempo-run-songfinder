@@ -37,7 +37,7 @@ var displaySong = function (data) {
 
         var genresEl = document.createElement("div");
         genresEl.classList = "column is-half genres";
-        
+
         var genresArray = songArray[i].artist.genres;
 
         if (genresArray != null) {
@@ -52,22 +52,23 @@ var displaySong = function (data) {
         }
 
         var songEl = document.createElement("li");
-        songEl.classList = "columns is-rounded song";
+        // songEl.classList = "columns is-rounded song";
+        songEl.classList = "columns is-mobile is-rounded song";
 
         var songInfoEl = document.createElement("div");
-        songInfoEl.classList = "column song-info";
+        songInfoEl.classList = "column is-11 song-info";
 
         var songTitleEl = document.createElement("h3");
         songTitleEl.textContent = songTitle;
-        songTitleEl.classList = "song-title";
+        // songTitleEl.classList = "column song-title";
+        songTitleEl.classList = "column is-full-mobile song-title";
 
         var songAddtlInfoEl = document.createElement("div");
-        songAddtlInfoEl.classList = "column column is-full song-addtl-info";
+        songAddtlInfoEl.classList = "columns column is-full-mobile song-addtl-info";
 
         var artistEl = document.createElement("div");
-        artistEl.classList = "column is-half artist"
         artistEl.textContent = artist;
-        artistEl.classList = "artist";
+        artistEl.classList = "column is-half artist"
 
         var addSongBtnEl = document.createElement("div");
         addSongBtnEl.classList = "column is-1 add-to-playlist"
@@ -75,7 +76,7 @@ var displaySong = function (data) {
 
         songAddtlInfoEl.appendChild(artistEl);
         songAddtlInfoEl.appendChild(genresEl);
-        
+
         songInfoEl.appendChild(songTitleEl);
         songInfoEl.appendChild(songAddtlInfoEl);
         songEl.appendChild(songInfoEl);

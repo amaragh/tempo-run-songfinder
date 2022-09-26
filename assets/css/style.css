@@ -86,6 +86,7 @@ a {
 
 }
 
+
 /* Needs bulma css styles */
 #search-form-section {
     /* background-color: var(--primary); */
@@ -96,6 +97,9 @@ a {
     /* border-color: #024e76; */
     /* width: 100%; */
 }
+
+
+
 
 .bpm-search {
     width: 18%;
@@ -165,13 +169,14 @@ body {
 
 .song-title {
     font-weight: bold;
+    font-size: 18px;
     margin: 0;
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .song-addtl-info {
-    margin: 5px 0;
-    margin-top: 0;
+    margin: 0 0 5px;
+    /* margin-top: 0; */
     padding: 0;
 }
 
@@ -179,7 +184,7 @@ body {
 .genres {
     margin: 5px 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .artist {
@@ -213,5 +218,17 @@ body {
     color: greenyellow;
     width: 100%;
     font-size: 24px;
+}
 
+/* Drop down menu styles */
+select {
+    border: 1px solid black;
+    font-size: x-large;
+    font-weight: lighter;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
