@@ -17,13 +17,8 @@
         <h1>
             <a href="index.html">Tempo Run</a>
         </h1>
-        <!-- (Should we add more features to the Nav) -->
         <nav>
-            <ul>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-            </ul>
+            <!-- Empty NAV if we want to add features after MVP -->
         </nav>
     </header>
     <!-- Header and Nav Bar END -->
@@ -32,47 +27,27 @@
     <section class="hero is-mobile">
         <!-- Hero-Form START -->
         <div class="bpm-search bulma-overlay-mixin is-mobile">
-            <form id="search-form-section" class="is-mobile">
+            <!-- Added Bulma TILE element -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-warning">
+                    <p id="slogan-title" class="title is-1 is-spaced">TEMPO RUN</p>
+                    <p id="slogan-text" class="subtitle is-2 is-spaced">Run to the beat of your own drum</p>
+                    <p id="about-text">Tempo Run is a fantastic training tool that can help to fuel your workouts and up your tempo! Users can search for songs based off of their target bpm and pace and add them to a playlist to help you to stay on target for your workout.</p>
+                    </article>
+                </div>
+            </div>
+            <br></br>
+            <form id="search-form-section" class="is-mobile row">
                 <!-- Numeric Input and Label -->
-                <div class="field">
-                    <label class="label is-normal" for="search">Search</label>
-                    <div class="control">
-                        <input class="input bpm is-warning is-rounded is-focused is-large" type="number" id="search"
-                            name="search" placeholder="BPM" min="40" max="220" />
-                    </div>
-                </div>
-                <!-- Genre Filter -->
-                <div class="field">
-                    <label class="label" id="dropdown" for="genre">Narrow Results by Genre</label>
-                    <div class="control">
-                        <!-- Genre dropdown -->
-                        <select class="dropdown-content" name="genre" id="genre">
-                            <option class="" value="">Choose a Genre</option>
-                            <option value="Alternative">Alternative</option>
-                            <option value="Blues">Blues</option>
-                            <option value="Classical">Classical</option>
-                            <option value="Country">Country</option>
-                            <option value="Dance">Dance/Electronic</option>
-                            <option value="Folk">Folk</option>
-                            <option value="Hip-Hop/Rap">Hip-Hop/Rap</option>
-                            <option value="Jazz">Jazz</option>
-                            <option value="Latin">Latin</option>
-                            <option value="Metal">Metal</option>
-                            <option value="New Age">New Age</option>
-                            <option value="Other/Undefined">Other/Undefined</option>
-                            <option value="Pop">Pop</option>
-                            <option value="R&B">R&B</option>
-                            <option value="Reggae">Reggae</option>
-                            <option value="Religious">Religious</option>
-                            <option value="Rock">Rock</option>
-                            <option value="World">World</option>
-                        </select>
-                    </div>
-                </div>
+                <label class="label title is-2 is-normal" for="search">Search by BPM</label>
+                <p class="is-normal" id="range-text">[ Range: 40-220 bpm ]</p>
+                <input class="input bpm is-rounded is-focused is-large" type="number" id="search"
+                    name="search" placeholder="BPM" min="40" max="220" />
                 <!-- Search Button -->
-                <button class="button is-normal is-black" type="submit" id="search-button">Search</button>
+                <br></br>
+                <button class="button is-large is-black" type="submit" id="search-button">Search</button>
             </form>
-
         </div>
     </section>
 
@@ -109,7 +84,12 @@
 
 
     </main>
-    <footer></footer>
+    <footer>
+
+        <p class="has-text-white"> © 2022 The Tempo Run Team: Alecia Maragh, Fidel Deaquino, Patrick Duffy and Camden Barnard</p>
+
+        <br>
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 

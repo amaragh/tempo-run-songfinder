@@ -35,17 +35,13 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-This project was completed by the following and thier contributions are also listed below:
+This project was completed by the following teammates and their contributions are also noted below:
 
-- Alecia Maragh
-  - GetSongBPM API call
-- Camden Barnard
-- Fidel Deaquino
-  - BOLMA styling
-  - Display responsiveness
-- Patrick Duffy
-  - HTML 
-  - BOLMA styling
+| Camden Barnard | Fidel Deaquino | Patrick Duffy | Alecia Maragh |
+| --- | --- | --- |--- |
+|Playlist HTML page | General display responsiveness | Homepage HTML skeleton |GetSongBPM API call|
+| |Overall Bulma styling |Overall Bulma styling |Search result styling|
+
 
 The [GetSongBPM API](https://getsongbpm.com/) was used to retrieve the list of songs returned by the search on the homepage.
 
