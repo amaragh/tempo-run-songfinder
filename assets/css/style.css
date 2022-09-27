@@ -58,7 +58,7 @@ a {
 
 /* HERO STYLES START */
 .hero {
-  height: 400px;
+  height: auto;
   width: 100%;
   background-image: url("../images/running-girl.jpg");
   background-size: cover;
@@ -85,11 +85,27 @@ a {
   /* margin-bottom: 3.5%; */
 }
 
+#slogan-text, #slogan-title {
+  text-align: center;
+}
+
+#slogan-title {
+  font-weight: bolder;
+}
+
+
+#about-text {
+  font-size: larger;
+  text-align: center;
+}
+
 .label {
   color: black;
   font-size: 30px;
+  text-align: center;
 }
 
+/* Is this the search button or is this a dynamic html button? */
 .btn {
   font-size: medium;
   text-decoration: var(--tertiary);
@@ -98,25 +114,15 @@ a {
   margin: auto;
 }
 
-#dropdown-lbl {
-  font-size: 20px;
-}
-
-select {
-  border: 1px solid black;
-  font-size: x-large;
-  font-weight: lighter;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: auto;
+#range-text {
+  text-align: center;
+  margin-bottom: 5px;
+  color: black;
 }
 
 #search-button {
   width: 100%;
+  max-height: 50px;
 }
 
 /* HERO STYLES END */
@@ -239,3 +245,17 @@ footer {
     text-align: center;
   }
 
+/* MEDIA Queries */
+@media screen and (max-width: 575px) {
+  #about-text {
+    display: none;
+  }
+
+  br {
+    display: none;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+
+}
