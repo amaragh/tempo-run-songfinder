@@ -7,16 +7,18 @@ var songListEl = document.querySelector("#results-list")
 var searchFormEl = document.querySelector("#search-form-section");
 var bpmInputEl = document.querySelector("#search");
 
+var bpmDisplayEl = document.querySelector(".bpm-display");
+
 
 var getSongsByBpm = function (bpm) {
 
     var apiURL = "https://api.getsongbpm.com/tempo/?api_key=c760a53e4f71cf130710e3cefa00e4d2&bpm=" + bpm + "&limit=10";
-    console.log(apiURL);
 
     fetch(apiURL).then(function (response) {
         if (response.ok) {
             response.json().then(function (data) {
-                displaySong(data);
+                displaySong(data, bpm);
+                
             });
         } else {
             console.log("ERROR");
@@ -26,8 +28,9 @@ var getSongsByBpm = function (bpm) {
 
 
 
-// function to parse BPM API response and diplay on page
-var displaySong = function (data) {
+// function to parse BPM API response and display on page
+var displaySong = function (data, bpm) {
+    bpmDisplayEl.textContent = "BPM: " + bpm;
 
     songListEl.innerHTML = "";
     var songArray = data.tempo;
@@ -56,6 +59,7 @@ var displaySong = function (data) {
         // songEl.classList = "columns is-rounded song";
         // songEl.classList = "columns is-mobile is-rounded song";
         songEl.classList = "columns column is-full-mobile is-5 is-rounded song";
+        songEl.setAttribute("data-bpm", bpm);
 
         var songInfoEl = document.createElement("div");
         songInfoEl.classList = "column is-11 song-info";
