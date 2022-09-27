@@ -103,3 +103,56 @@ var searchSubmitHandler = function (event) {
 
 searchFormEl.addEventListener("submit", searchSubmitHandler);
 
+var clientId = "d91c0b2910384c41b442fdce3bacbfe6";
+var clientSecret = "3100aaf59f92404d8c950fff02563fb0";
+
+// function to call spotify API to retrieve access token
+var spotifyAuth = function () {
+    apiTokenUrl = 'https://accounts.spotify.com/api/token';
+
+    fetch(apiTokenUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
+        },
+        body: 'grant_type=client_credentials',
+        json: true
+
+    }).then(function (response) {
+        if (response.ok) {
+            response.json().then(function (data) {
+                var accessToken = data.access_token;
+                console.log(accessToken);
+                findSpotifyTrackID(accessToken);
+            })
+        }
+    })
+};
+
+spotifyAuth();
+
+var findSpotifyTrackID = function(accessToken) {
+    apiUrl = "https://api.spotify.com/v1/search?q=track%3A" + "despacito" + "%20artist%3A" + "bieber" + "&type=track";
+
+    // var accessToken = "BQD1xawescw5HrLC8p1xaDXTmxy9Z65AHNt_cCe95W6UneJckQCDWzPwOZ15WIk-aLDynXT63zLaV0XSMlJfKv_7Axm5nez-DcJO1WFJqj8yQADW1mU";
+
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + accessToken
+        },
+        json: true
+
+    }).then(function (response) {
+        if (response.ok) {
+            response.json().then(function (data) {
+                console.log(data);
+            })
+        }
+    })
+
+}
+
+
