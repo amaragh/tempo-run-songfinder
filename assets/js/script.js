@@ -12,13 +12,14 @@ var bpmDisplayEl = document.querySelector(".bpm-display");
 
 var getSongsByBpm = function (bpm) {
 
+    // getsongbpm API URL with query parameter for limit of 10 songs
     var apiURL = "https://api.getsongbpm.com/tempo/?api_key=c760a53e4f71cf130710e3cefa00e4d2&bpm=" + bpm + "&limit=10";
 
     fetch(apiURL).then(function (response) {
         if (response.ok) {
             response.json().then(function (data) {
+                // call function to dospaly songs on homepage
                 displaySong(data, bpm);
-
             });
         } else {
             console.log("ERROR");
@@ -27,11 +28,12 @@ var getSongsByBpm = function (bpm) {
 };
 
 
-
 // function to parse BPM API response and display on page
 var displaySong = function (data, bpm) {
+    // display BPM above search results
     bpmDisplayEl.textContent = "BPM: " + bpm;
 
+    // clear existing search results to make way for new search results
     songListEl.innerHTML = "";
     var songArray = data.tempo;
 
@@ -54,7 +56,7 @@ var displaySong = function (data, bpm) {
                 genresEl.appendChild(genreEl);
             }
         }
-
+        // create song data elements and add bulma classes
         var songEl = document.createElement("li");
         songEl.classList = "columns column is-full-mobile is-5 is-rounded song";
         songEl.setAttribute("data-bpm", bpm);
@@ -64,7 +66,6 @@ var displaySong = function (data, bpm) {
 
         var songTitleEl = document.createElement("h3");
         songTitleEl.textContent = songTitle;
-        // songTitleEl.classList = "column song-title";
         songTitleEl.classList = "column is-full-mobile song-title";
 
         var songAddtlInfoEl = document.createElement("div");
@@ -97,6 +98,7 @@ var searchSubmitHandler = function (event) {
     // get BPM from input value
     var bpm = bpmInputEl.value.trim();
 
+    // modal to appear if no BPM value is entered before submit
     if (!bpm) {
         swal("Please enter a BPM value of 40-220");
     } else {
@@ -107,5 +109,6 @@ var searchSubmitHandler = function (event) {
 
 }
 
+// listener event on BOPM submit form
 searchFormEl.addEventListener("submit", searchSubmitHandler);
 
