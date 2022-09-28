@@ -135,13 +135,12 @@ body {
 /* START Dynamic HTML STYLES for Song List */
 
 .column {
-    /* margin: 50px auto; */
-    /* padding-bottom: 50px; */
-    /* width: 80%; */
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+}
+
+.column:last-child {
+    margin-bottom: auto;
 }
 
 .song {
