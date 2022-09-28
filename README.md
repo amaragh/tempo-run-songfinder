@@ -10,15 +10,6 @@ We were able to leverage as well as build upon the skills we have learned so far
 - Learning how to use new third-party APIs
 - Managing GitHub branches with commits and pull request made by more than one user
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
 N/A
@@ -57,11 +48,3 @@ If you followed tutorials, include links to those here as well.
 ## License
 
 Please see repo for license information
-
----
-
-
-## Features
-
-If your project has a lot of features, list them here.
-
