@@ -18,7 +18,7 @@ var getSongsByBpm = function (bpm) {
         if (response.ok) {
             response.json().then(function (data) {
                 displaySong(data, bpm);
-                
+
             });
         } else {
             console.log("ERROR");
@@ -99,7 +99,11 @@ var searchSubmitHandler = function (event) {
     // get BPM from input value
     var bpm = bpmInputEl.value.trim();
 
-    getSongsByBpm(bpm);
+    if (!bpm) {
+        swal("Please enter a BPM value of 40-220");
+    } else {
+        getSongsByBpm(bpm);
+    }
 
     bpmInputEl.value = "";
 

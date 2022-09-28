@@ -6,24 +6,30 @@ As a runner training for a marathon, I want to be able to set my pace as I train
 
 We were able to leverage as well as build upon the skills we have learned so far. A few examples are:
 - Planning and delegating tasks for application development
-- Creating a smooth and intercative user experience
+- Creating a smooth and interactive user experience
 - Learning how to use new third-party APIs
 - Managing GitHub branches with commits and pull request made by more than one user
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
 N/A
 
+## Technologies
+
+This project is created with the following:
+
+- Bulma version: 0.9.4
+- JQuery version: ?????
+- Font Awesome version: 5.11.2
+
 ## Usage
+
+Link to deployed application can be found [here](https://amaragh.github.io/tempo-run-songfinder/).
+
+This application allows the user to search for songs by beats per minute (BPM). The allowed BPM range is 40-220 and the input element will validate against any value entered in this field. When the user submits the search, information for 10 songs is displayed below the hero element. The user can then add a song to their playlist by clicking the plus icon. TO access the playlist, click on the Playlist link in the nav bar. 
+
+ALSO NEED TO ADD INFO ABOUT NAVIGATING THE PLAYLIST PAGE
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -57,11 +63,3 @@ If you followed tutorials, include links to those here as well.
 ## License
 
 Please see repo for license information
-
----
-
-
-## Features
-
-If your project has a lot of features, list them here.
-
