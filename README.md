@@ -14,7 +14,18 @@ We were able to leverage as well as build upon the skills we have learned so far
 
 N/A
 
+## Technologies
+
+This project is created with the following:
+
+- Bulma version: 0.9.4
+- JQuery version: ?????
+- Font Awesome version: 5.11.2
+
 ## Usage
+
+Link to deployed application can be found [here](https://amaragh.github.io/tempo-run-songfinder/).
+
 
 Provide instructions and examples for use. Include screenshots as needed.
 
