@@ -160,7 +160,10 @@ body {
     padding-bottom: 5px;
     background-color: rgb(255, 184, 28, 1);
     color: black;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 100%;
+
 }
 
 .song-info {
