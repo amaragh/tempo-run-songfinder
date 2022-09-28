@@ -133,7 +133,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    /* height: 50vh; */
 }
 
 /* START Dynamic HTML STYLES for Song List */
@@ -223,31 +223,9 @@ main {
 /* START FOOTER STYLES */
 
 footer {
-    font-size: large;
-    margin-top: 200px;
     color: var(--tertiary);
-    text-align: center;
 }
 
-/* Drop down menu styles */
-select {
-    border: 1px solid black;
-    font-size: x-large;
-    font-weight: lighter;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-footer {
-    font-size: large;
-    margin-top: 200px;
-    color: var(--tertiary);
-    text-align: center;
-}
 
 /* MEDIA Queries */
 @media screen and (max-width: 575px) {
