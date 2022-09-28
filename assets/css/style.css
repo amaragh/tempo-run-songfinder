@@ -138,11 +138,8 @@ body {
     background-color: var(--primary);
 }
 
-main {
-    height: 100vh;
-}
-
 /* START Dynamic HTML STYLES for Song List */
+
 
 .column { 
     margin: 50px auto;
@@ -150,8 +147,10 @@ main {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+}
+
+.column:last-child {
+    margin-bottom: auto;
 }
 
 .song {
@@ -161,6 +160,7 @@ main {
     padding-bottom: 5px;
     background-color: rgb(255, 184, 28, 1);
     color: black;
+    max-width: 100%;
 }
 
 .song-info {
@@ -203,7 +203,6 @@ main {
 }
 
 .add-to-playlist {
-
     margin: 0;
     padding: 0;
 }
@@ -228,24 +227,22 @@ main {
 /* START FOOTER STYLES */
 
 footer {
-    font-size: large;
-    margin-top: 200px;
     color: var(--tertiary);
-    text-align: center;
 }
 
-/* Drop down menu styles */
-select {
-    border: 1px solid black;
-    font-size: x-large;
-    font-weight: lighter;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .song {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
 
 footer {
     font-size: large;
@@ -267,6 +264,7 @@ footer {
     }
 
 }
+
 
 @media screen and (max-width: 575px) {
     #about-text {
