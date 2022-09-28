@@ -1,210 +1,220 @@
 :root {
-  --primary: rgb(99, 199, 249);
-  --secondary: rgb(46, 45, 45);
-  --tertiary: rgb(255, 255, 255);
+    --primary: rgb(99, 199, 249);
+    --secondary: rgb(46, 45, 45);
+    --tertiary: rgb(255, 255, 255);
 }
 
 /* HEADER/NAV STYLES START */
 header {
-  padding: 20px 35px;
-  background-color: var(--primary);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
+    padding: 20px 35px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
 header a {
-  text-decoration: none;
-  color: var(--tertiary);
+    text-decoration: none;
+    color: var(--tertiary);
 }
 
 header nav {
-  margin: 7px 0;
+    margin: 7px 0;
 }
 
 header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
-  font-weight: bold;
-  font-size: 36px;
-  color: var(--tertiary);
-  margin: 0;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--tertiary);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 a {
-  color: var(--tertiary);
+    color: var(--tertiary);
 }
 
 /* HEADER/NAV STYLES END */
 
 /* HERO STYLES START */
 .hero {
-  height: 400px;
-  width: 100%;
-  background-image: url("../images/running-girl.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  background-position: top;
+    height: auto;
+    width: 100%;
+    background-image: url("../images/running-girl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: top;
 }
 
 
 .bulma-overlay-mixin {
-  /* overlay: 1.5rem; */
-  background-color: #FFB81C;
-  border-radius: 20px;
-  color: white;
-  opacity: 0.8;
-  padding: 1em;
-  display: block;
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 3.5%;
-  margin-left: 10%;
-  width: 80%;
-  /* margin-bottom: 3.5%; */
+    /* overlay: 1.5rem; */
+    background-color: #FFB81C;
+    border-radius: 20px;
+    color: white;
+    opacity: 0.8;
+    padding: 1em;
+    display: block;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 3.5%;
+    margin-left: 10%;
+    width: 80%;
+    /* margin-bottom: 3.5%; */
+}
+
+#slogan-text,
+#slogan-title {
+    text-align: center;
+}
+
+#slogan-title {
+    font-weight: bolder;
+}
+
+
+#about-text {
+    font-size: larger;
+    text-align: center;
 }
 
 .label {
-  color: black;
-  font-size: 30px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
 }
 
+/* Is this the search button or is this a dynamic html button? */
 .btn {
-  font-size: medium;
-  text-decoration: var(--tertiary);
-  width: 100%;
-  display: block;
-  margin: auto;
+    font-size: medium;
+    text-decoration: var(--tertiary);
+    width: 100%;
+    display: block;
+    margin: auto;
 }
 
-#dropdown-lbl {
-  font-size: 20px;
-}
-
-select {
-  border: 1px solid black;
-  font-size: x-large;
-  font-weight: lighter;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: auto;
+#range-text {
+    text-align: center;
+    margin-bottom: 5px;
+    color: black;
 }
 
 #search-button {
-  width: 100%;
+    width: 100%;
+    max-height: 50px;
 }
 
 /* HERO STYLES END */
 body {
-  background-color: var(--tertiary);
-  background-color: var(--primary);
+    background-color: var(--tertiary);
+    background-color: var(--primary);
 }
 
 main {
-  height: 100vh;
+    height: 100vh;
 }
 
 /* START Dynamic HTML STYLES for Song List */
+
 .column {
-  background-color: var(--primary);
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+    /* background-color: var(--primary); */
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .song {
-  border: solid 1px darkgrey;
-  border-radius: 7px;
-  margin: 10px;
-  padding-bottom: 5px;
+    border: solid 1px darkgrey;
+    border-radius: 7px;
+    margin: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 184, 28, 1);
+    color: black;
 }
 
 .song-info {
-  margin: 10px 0;
-  padding: 0;
-  padding-left: 5px;
+    margin: 10px 0;
+    padding: 0;
+    padding-left: 5px;
 }
 
 .song-title {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  padding: 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 5px;
 }
 
 .song-addtl-info {
-  margin: 0 0 5px;
-  /* margin-top: 0; */
-  padding: 0;
+    margin: 0 0 5px;
+    /* margin-top: 0; */
+    padding: 0;
 }
 
 .artist,
 .genres {
-  margin: 5px 0;
-  padding: 0;
-  font-size: 16px;
+    margin: 5px 0;
+    padding: 0;
+    font-size: 16px;
 }
 
 .artist {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 
 .genres {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
 .genre {
-  padding-left: 2px;
+    padding-left: 2px;
 }
 
 .add-to-playlist {
 
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .add-to-playlist button {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  border: none;
-  background-color: inherit;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: none;
+    background-color: inherit;
 }
 
 .fa-plus {
-  color: greenyellow;
-  width: 100%;
-  font-size: 24px;
+    color: greenyellow;
+    width: 100%;
+    font-size: 24px;
 }
 
 
@@ -213,10 +223,10 @@ main {
 /* START FOOTER STYLES */
 
 footer {
-  font-size: large;
-  margin-top: 200px;
-  color: var(--tertiary);
-  text-align: center;
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
 }
 
 /* Drop down menu styles */
@@ -237,5 +247,20 @@ footer {
     margin-top: 200px;
     color: var(--tertiary);
     text-align: center;
-  }
+}
 
+/* MEDIA Queries */
+@media screen and (max-width: 575px) {
+    #about-text {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+}
