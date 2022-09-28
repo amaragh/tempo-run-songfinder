@@ -68,6 +68,10 @@ a {
     background-position: top;
 }
 
+.tile {
+    margin-right: 2%;
+
+}
 
 .bulma-overlay-mixin {
     /* overlay: 1.5rem; */
@@ -76,12 +80,14 @@ a {
     color: white;
     opacity: 0.8;
     padding: 1em;
-    display: block;
+    display: inline-flex;
     border: 1px solid var(--secondary);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 3.5%;
     margin-left: 10%;
     width: 80%;
+    height: auto;
+    align-items: center;
     /* margin-bottom: 3.5%; */
 }
 
@@ -134,7 +140,11 @@ body {
 
 /* START Dynamic HTML STYLES for Song List */
 
-.column {
+
+.column { 
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -221,7 +231,7 @@ footer {
 }
 
 
-/* MEDIA Queries */
+
 
 
 @media screen and (max-width: 768px) {
@@ -232,6 +242,29 @@ footer {
         margin-right: auto;
     }
 }
+
+
+footer {
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* MEDIA Queries */
+@media screen and (max-width: 650px) {
+    .tile {
+        display: none;
+    }
+
+    .bulma-overlay-mixin {
+        display:inline-block;
+        align-items: center;
+    }
+
+}
+
 
 @media screen and (max-width: 575px) {
     #about-text {
@@ -245,5 +278,10 @@ footer {
     input {
         margin-bottom: 10px;
     }
+    
+    .tile {
+        display: none;
+    }
+    
 
 }
