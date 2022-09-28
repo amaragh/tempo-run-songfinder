@@ -141,7 +141,7 @@ body {
 /* START Dynamic HTML STYLES for Song List */
 
 
-.column { 
+.column {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
@@ -149,7 +149,7 @@ body {
     flex-wrap: wrap;
 }
 
-.column:last-child {
+.song:last-child {
     margin-bottom: auto;
 }
 
@@ -161,6 +161,7 @@ body {
     background-color: rgb(255, 184, 28, 1);
     color: black;
     border: 1px solid var(--secondary);
+    border: 1px solid grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 100%;
 
@@ -233,12 +234,8 @@ footer {
     color: var(--tertiary);
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
-    
+
     .song {
         max-width: 90%;
         margin-left: auto;
@@ -262,7 +259,7 @@ footer {
     }
 
     .bulma-overlay-mixin {
-        display:inline-block;
+        display: inline-block;
         align-items: center;
     }
 
@@ -281,10 +278,10 @@ footer {
     input {
         margin-bottom: 10px;
     }
-    
+
     .tile {
         display: none;
     }
-    
+
 
 }
