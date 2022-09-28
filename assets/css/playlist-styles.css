@@ -1,0 +1,24 @@
+:root {
+    --primary: rgb(99, 199, 249);
+    --secondary: rgb(46, 45, 45);
+    --tertiary: rgb(255, 255, 255);
+  }
+
+/* Playlist Styles */
+
+#playlist-div {
+  background-color: #FFB81C;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3vw;
+  border-radius: 1.5vw;
+}
+
+p {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+  }

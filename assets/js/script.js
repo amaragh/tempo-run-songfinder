@@ -89,6 +89,10 @@ var displaySong = function (data) {
 
 }
 
+var saveSongs = function (event) {
+   
+}
+
 var searchSubmitHandler = function (event) {
     event.preventDefault();
 
@@ -103,3 +107,7 @@ var searchSubmitHandler = function (event) {
 
 searchFormEl.addEventListener("submit", searchSubmitHandler);
 
+$(songListEl).on("click", "button", function (event) {
+    var songData = (event.target.closest("li"));
+    
+});
