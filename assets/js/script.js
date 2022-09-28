@@ -56,13 +56,11 @@ var displaySong = function (data, bpm) {
         }
 
         var songEl = document.createElement("li");
-        // songEl.classList = "columns is-rounded song";
-        // songEl.classList = "columns is-mobile is-rounded song";
         songEl.classList = "columns column is-full-mobile is-5 is-rounded song";
         songEl.setAttribute("data-bpm", bpm);
 
         var songInfoEl = document.createElement("div");
-        songInfoEl.classList = "column is-11 song-info";
+        songInfoEl.classList = "column is-11 is-10-mobile song-info";
 
         var songTitleEl = document.createElement("h3");
         songTitleEl.textContent = songTitle;
@@ -77,7 +75,7 @@ var displaySong = function (data, bpm) {
         artistEl.classList = "column is-half artist"
 
         var addSongBtnEl = document.createElement("div");
-        addSongBtnEl.classList = "column is-1 add-to-playlist"
+        addSongBtnEl.classList = "column is-1 is-2-mobile add-to-playlist"
         addSongBtnEl.innerHTML = "<button type='button'><i class='fa fa-plus'></i></button>"
 
         songAddtlInfoEl.appendChild(artistEl);
