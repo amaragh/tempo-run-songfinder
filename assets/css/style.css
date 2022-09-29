@@ -21,13 +21,13 @@ header h1 {
     font-weight: bold;
     font-size: 36px;
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
 
 }
 
 header a {
     text-decoration: none;
-    color: var(--tertiary);
+    color: var(--secondary);
 }
 
 header nav {
@@ -88,20 +88,12 @@ a {
     width: 80%;
     height: auto;
     align-items: center;
-    /* margin-bottom: 3.5%; */
 }
 
-#slogan-text,
-#slogan-title {
+#slogan-text {
     text-align: center;
     color: black;
 }
-
-#slogan-title {
-    font-weight: bolder;
-   
-}
-
 
 #about-text {
     font-size: larger;
@@ -163,11 +155,9 @@ body {
     padding-bottom: 5px;
     background-color: rgb(255, 184, 28, 1);
     color: black;
-    border: 1px solid var(--secondary);
     border: 1px solid grey;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     max-width: 100%;
-
 }
 
 .song-info {
@@ -185,7 +175,6 @@ body {
 
 .song-addtl-info {
     margin: 0 0 5px;
-    /* margin-top: 0; */
     padding: 0;
 }
 
@@ -232,21 +221,6 @@ body {
 /* END Dynamic HTML STYLES for Song List */
 
 /* START FOOTER STYLES */
-
-footer {
-    color: var(--tertiary);
-}
-
-@media screen and (max-width: 768px) {
-
-    .song {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
 footer {
     font-size: large;
     margin-top: 200px;
@@ -256,6 +230,14 @@ footer {
 }
 
 /* MEDIA Queries */
+@media screen and (max-width: 768px) {
+    .song {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .tile {
         display: none;
@@ -265,9 +247,7 @@ footer {
         display: inline-block;
         align-items: center;
     }
-
 }
-
 
 @media screen and (max-width: 575px) {
     #about-text {
