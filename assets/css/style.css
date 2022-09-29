@@ -27,7 +27,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 header nav {
@@ -239,6 +239,11 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
+
+    header {
+        padding: 15px 35px;
+    }
+
     .tile {
         display: none;
     }
@@ -250,6 +255,10 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+    header {
+        padding: 10px 35px;
+    }
+
     #about-text {
         display: none;
     }
