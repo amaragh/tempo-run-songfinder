@@ -18,10 +18,10 @@ N/A
 
 This project is created with the following:
 
-- Bulma version: 0.9.4
-- JQuery version: ?????
-- Font Awesome version: 5.11.2
-- SweetAlert version: 1
+- Bulma version 0.9.4
+- JQuery version 3.4.1
+- Font Awesome version 5.11.2
+- SweetAlert version 1
 
 ## Usage
 
