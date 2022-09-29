@@ -38,9 +38,9 @@ This project was completed by the following collaborators and their contribution
 |Collaborators                                       |Roles and Contributions|
 |---                                                 |---                    |
 |[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML|
-|[Fidel Deaquino](https://github.com/fdeaquino)      |Overall CSS styling, input range element|
-|[Patrick Duffy](https://github.com/Patrick-Duffy202)| Initial HTML framework, overall CSS styling, hero and form responsiveness, SweetAlert modal|
-|[Alecia Maragh](https://github.com/amaragh)         | Team Lead, GetSongbpm API call, search result display and styling, search result mobile responsiveness, SweetAlert modal|
+|[Fidel Deaquino](https://github.com/fdeaquino)      |Homepage HTML; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; input range element; media queries|
+|[Patrick Duffy](https://github.com/Patrick-Duffy202)| Initial Homepage HTML framework; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; SweetAlert modal; footer content and style|
+|[Alecia Maragh](https://github.com/amaragh)         |Team Lead; GetSongbpm API call; search result display, style and mobile responsiveness; SweetAlert modal; footer content and style; media queries|
 
 The [GetSongBPM API](https://getsongbpm.com/) was used to retrieve the list of songs returned by the search on the homepage.
 
