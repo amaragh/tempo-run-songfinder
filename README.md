@@ -43,7 +43,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 This project was completed by the following teammates and their contributions are also noted below:
 
-| Camden Barnard | Fidel Deaquino | Patrick Duffy | Alecia Maragh |
+| [Camden Barnard](https://github.com/chikn4theWIN) | [Fidel Deaquino](https://github.com/fdeaquino) | [Patrick Duffy](https://github.com/Patrick-Duffy202) | [Alecia Maragh](https://github.com/amaragh) |
 | --- | --- | --- |--- |
 |Playlist HTML page | General display responsiveness | Homepage HTML skeleton |GetSongBPM API call|
 | |Overall Bulma styling |Overall Bulma styling |Search result styling|
