@@ -27,7 +27,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--tertiary);
+    color: var(--secondary);
 }
 
 header nav {
