@@ -112,3 +112,20 @@ var searchSubmitHandler = function (event) {
 // listener event on BOPM submit form
 searchFormEl.addEventListener("submit", searchSubmitHandler);
 
+$(songListEl).on("click", "button", function (event) {
+    var songData = (event.target.closest("li"));
+    
+    var songTitle = songData.querySelector("h3").textContent;
+    var songArtist = songData.querySelector("div.artist").textContent;
+    var songGenres = songData.querySelector("div.genres").textContent;
+    var songBPM = document.querySelector("h2.bpm-display").textContent;
+
+    var songDetails = {
+        song: songTitle,
+        artist: songArtist,
+        genres: songGenres,
+        bpm: songBPM
+    }
+    
+    localStorage.setItem(songTitle, JSON.stringify(songDetails));
+});
