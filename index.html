@@ -43,7 +43,7 @@
             <form id="search-form-section" class="is-mobile row">
                 <!-- Numeric Input and Label -->
                 <label class="label title is-2 is-normal" for="search">Search by BPM</label>
-                <p class="is-normal" id="range-text">[  Range: 40-220 bpm ]</p>
+                <p class="is-normal" id="range-text">[ Range: 40-220 bpm ]</p>
                 <input class="input bpm is-rounded is-focused is-large" type="number" id="search" name="search"
                     placeholder="BPM" min="40" max="220" />
                 <!-- Search Button -->
@@ -61,6 +61,14 @@
         </ul>
 
     </main>
+    <div class="music-player columns is-centered">
+        <iframe class="column is-10" width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/djprivateryan/private-ryan-presents-soca-starter-2015-preview-to-soca-brainwash?si=3fcc6646985a4e198f84b3f631512af3">
+        </iframe>
+
+    </div>
+ 
+
     <footer>
         <p class="has-text-centered is-size-7 mt-6">Search results powered by <a class="has-text-link is-underlined"
                 href="https://getsongbpm.com/api">GetSongbpm API</a>.</p>
@@ -69,6 +77,7 @@
 
         <br>
     </footer>
+
     <script src="./assets/js/script.js"></script>
 </body>
 
