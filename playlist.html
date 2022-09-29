@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Run</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/playlist-styles.css">
+</head>
+
+<body>
+    <!-- Header and Nav Bar START -->
+    <header>
+        <h1>
+            <a href="index.html">Tempo Run</a>
+        </h1>
+        <!-- (Should we add more features to the Nav) -->
+        <nav>
+            <ul>
+                <li class="mr-5">
+                    <a href="./index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header and Nav Bar END -->
+
+    <main>
+        <div id="playlist-div">
+            <!-- Playlist Brief -->
+            <div id="playlist-brief">
+                <p class=" is-size-1 m-auto has-text-centered "> My Playlist</p>
+            </div>
+
+            <!-- Music Player -->
+            <div class="music-player columns is-centered">
+                <iframe class="column mx-3" width="80%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                    src="https://w.soundcloud.com/player/?url=https://soundcloud.com/alecilur/sets/tempo-run-playlist">
+                </iframe>
+            </div>
+            <!-- Playlist Section -->
+            <div id="playlist ">
+                <ul id="play-list">
+
+                </ul>
+            </div>
+            <!-- Playlist Info -->
+            <div id="playlist-info">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <p class="has-text-white"> © 2022 The Tempo Run Team: Alecia Maragh, Fidel Deaquino, Patrick Duffy and Camden
+            Barnard</p>
+
+        <br>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/playlist.js"></script>
+</body>
+
+</html>

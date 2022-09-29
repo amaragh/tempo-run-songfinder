@@ -1,0 +1,193 @@
+:root {
+    --primary: rgb(99, 199, 249);
+    --secondary: rgb(46, 45, 45);
+    --tertiary: rgb(255, 255, 255);
+}
+
+/* HEADER/NAV STYLES START */
+header {
+    padding: 20px 35px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--tertiary);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--tertiary);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    color: var(--tertiary);
+}
+
+/* HEADER/NAV STYLES END */
+
+body {
+    background-color: var(--tertiary);
+    background-color: var(--primary);
+}
+
+main {
+    height: 100vh;
+}
+
+/* START Dynamic HTML STYLES for Song List */
+
+.column {
+    /* background-color: var(--primary); */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song {
+    padding: 1vw;
+    border: solid 1px darkgrey;
+    border-radius: 7px;
+    margin: 10px;
+    padding-bottom: 5px;
+    background-color: var(--primary);
+    color: black;
+    align-items: center;
+}
+
+.song-info {
+    margin: 10px 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.artist {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.genre {
+    padding-left: 2px;
+    justify-content: left;
+    margin-bottom: 3vw;
+    font-weight: bold;
+}
+
+
+/* END Dynamic HTML STYLES for Song List */
+
+/* START FOOTER STYLES */
+
+footer {
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+}
+
+/* Drop down menu styles */
+select {
+    border: 1px solid black;
+    font-size: x-large;
+    font-weight: lighter;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer {
+    font-size: large;
+    margin-top: 200px;
+    color: var(--tertiary);
+    text-align: center;
+}
+
+
+/* Playlist Styles */
+
+#playlist-div {
+  background-color: #FFB81C;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3vw;
+  border-radius: 1.5vw;
+}
+
+p {
+    font-weight: bold;
+    font-size: ;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.song-title {
+    font-size: 2vw;
+}
+
+.artist {
+    font-size: 1vw;
+}
+
+.genre {
+    font-size: 1vw;
+}
+
+/* MEDIA Queries */
+@media screen and (max-width: 575px) {
+    #about-text {
+        display: none;
+    }
+
+    br {
+        display: none;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+}
