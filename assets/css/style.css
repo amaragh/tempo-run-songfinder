@@ -94,16 +94,19 @@ a {
 #slogan-text,
 #slogan-title {
     text-align: center;
+    color: black;
 }
 
 #slogan-title {
     font-weight: bolder;
+   
 }
 
 
 #about-text {
     font-size: larger;
     text-align: center;
+    color: black;
 }
 
 .label {
