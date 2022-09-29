@@ -35,12 +35,12 @@ This application allows the user to search for songs by beats per minute (BPM). 
 
 This project was completed by the following collaborators and their contributions are also noted below:
 
-| [Camden Barnard](https://github.com/chikn4theWIN) | [Fidel Deaquino](https://github.com/fdeaquino) | [Patrick Duffy](https://github.com/Patrick-Duffy202) | [Alecia Maragh](https://github.com/amaragh) |
-| --- | --- | --- |--- |
-|Playlist HTML page | General display responsiveness | Homepage HTML skeleton |GetSongBPM API call|
-| |Overall Bulma styling |Overall Bulma styling |Homepage song display|
-| |Mobile responsiveness |Hero styling |Homepage song styling|
-| | | |Homepage song mobile responsiveness|
+|Collaborators                                       |Roles and Contributions|
+|---                                                 |---                    |
+|[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML|
+|[Fidel Deaquino](https://github.com/fdeaquino)      |Homepage HTML; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; input range element; media queries|
+|[Patrick Duffy](https://github.com/Patrick-Duffy202)| Initial Homepage HTML framework; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; SweetAlert modal; footer content and style|
+|[Alecia Maragh](https://github.com/amaragh)         |Team Lead; GetSongbpm API call; search result display, style and mobile responsiveness; SweetAlert modal; footer content and style; media queries|
 
 The [GetSongBPM API](https://getsongbpm.com/) was used to retrieve the list of songs returned by the search on the homepage.
 
