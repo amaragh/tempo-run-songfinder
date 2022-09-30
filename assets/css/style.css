@@ -220,9 +220,8 @@ body {
 .fa-plus:hover {
     font-size: 26px;
     transition: all .2s ease-in-out;
-
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 
 /* END Dynamic HTML STYLES for Song List */
