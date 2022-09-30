@@ -27,9 +27,9 @@ This project is created with the following:
 
 Link to deployed application can be found [here](https://amaragh.github.io/tempo-run-songfinder/).
 
-This application allows the user to search for songs by beats per minute (BPM). The allowed BPM range is 40-220 and the input element will validate against any value entered in this field. When the user submits the search, information for 10 songs is displayed below the hero element. The user can then add a song to their playlist by clicking the plus icon. To access the playlist, click on the Playlist link in the nav bar. 
+This application allows the user to search for songs by beats per minute (BPM). The allowed BPM range is 40-220 and the input element will validate against any value entered in this field. When the user submits the search, information for 10 songs is displayed below the hero element. The user can then add a song to their playlist by clicking the plus icon. To access the playlist, click on the Playlist link in the nav bar. The user can also navigate back to the homepage from the playlist by clicking the "Home" button.
 
-The user can also navigate back to the homepage from the playlist by clicking the "Home" button.
+On the Playlist page, the SoundCloud Widget will be present, and any clicked songs from the Homepage will appear below the SoundCloud music player. Any songs added to the playlist will be saved to `localStorage` and can be removed by clicking the "Delete song" button.
 
 Please see below for some screenshots of the application.
 
@@ -48,7 +48,8 @@ This project was completed by the following collaborators and their contribution
 
 |Collaborators                                       |Roles and Contributions|
 |---                                                 |---                    |
-|[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML, CSS and Bulma CSS; JS to save playlist to localStorage; |
+|[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML, CSS and Bulma CSS; JS to save playlist to localStorage; JS to delete songs from playlist and localStorage
+|
 |[Fidel Deaquino](https://github.com/fdeaquino)      |Homepage HTML; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; input range element; media queries|
 |[Patrick Duffy](https://github.com/Patrick-Duffy202)| Initial Homepage HTML framework; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; SweetAlert modal; footer content and style|
 |[Alecia Maragh](https://github.com/amaragh)         |Team Lead; GetSongbpm API call; search result display, style and mobile responsiveness; SweetAlert modal; footer content and style; media queries; playlist iframe|
