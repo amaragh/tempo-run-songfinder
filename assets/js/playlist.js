@@ -9,7 +9,7 @@ var addTracks = $(document).ready(function() {
 
             var songEl = document.createElement("li");
             songEl.classList = "columns song";
-            songEl.id = 'song-' + i; 
+            songEl.id = i; 
             playlist.appendChild(songEl);
 
             var songTitle = (JSON.parse(songs[i]).song);
@@ -24,7 +24,7 @@ var addTracks = $(document).ready(function() {
             songEl.appendChild(songInfoEl);
 
             var songTitleArt = document.createElement("div");
-            songTitleArt.classList = "column columns is-3 song-name-art"
+            songTitleArt.classList = "column columns is-4 song-name-art"
             songInfoEl.appendChild(songTitleArt);
 
             var songTitleEl = document.createElement("div");
@@ -42,7 +42,19 @@ var addTracks = $(document).ready(function() {
             genreEl.classList = "column is-2 genre";
             songInfoEl.appendChild(genreEl);
 
-            var searchEl = document.createElement("button");
+            var deleteEl = document.createElement("button");
+            deleteEl.textContent = "Delete song"
+            deleteEl.classList = "btn column is-2 bg-danger"
+            songInfoEl.appendChild(deleteEl);
 
         }
+
+        $(playlist).on("click", "button", function (event) {
+            var songData = (event.target.closest("li"));
+            var songTitle = document.querySelector(".song-title");
+            var songName = songTitle.textContent;
+            $(this).closest("li").remove();
+            
+            localStorage.removeItem(songName)
+        });
 });
