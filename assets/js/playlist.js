@@ -42,6 +42,11 @@ var addTracks = $(document).ready(function() {
             genreEl.classList = "column is-2 genre";
             songInfoEl.appendChild(genreEl);
 
+            var bpmEl = document.createElement("div");
+            bpmEl.textContent = songBPM;
+            bpmEl.classList = "column is-2 genre";
+            songInfoEl.appendChild(bpmEl);
+
             var deleteEl = document.createElement("button");
             deleteEl.textContent = "Delete song"
             deleteEl.classList = "btn column is-2 bg-danger"
