@@ -48,7 +48,7 @@ This project was completed by the following collaborators and their contribution
 
 |Collaborators                                       |Roles and Contributions|
 |---                                                 |---                    |
-|[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML, CSS and Bulma CSS; JS to save playlist to localStorage|
+|[Camden Barnard](https://github.com/chikn4theWIN)   | Playlist HTML, CSS and Bulma CSS; JS to save playlist to localStorage; |
 |[Fidel Deaquino](https://github.com/fdeaquino)      |Homepage HTML; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; input range element; media queries|
 |[Patrick Duffy](https://github.com/Patrick-Duffy202)| Initial Homepage HTML framework; overall CSS and Bulma styling; overall homepage/hero/form web responsiveness; SweetAlert modal; footer content and style|
 |[Alecia Maragh](https://github.com/amaragh)         |Team Lead; GetSongbpm API call; search result display, style and mobile responsiveness; SweetAlert modal; footer content and style; media queries; playlist iframe|
